@@ -32,7 +32,7 @@ function Content() {
                                     I design and code beautifully simple things,<br />and I love
                                     what I do.
                                 </p>
-                                <a href="#">LET'S CHAT!</a>
+                                <a href="\">LET'S CHAT!</a>
                             </div>
                             <div class="body-tail">
                                 <h1>2</h1>

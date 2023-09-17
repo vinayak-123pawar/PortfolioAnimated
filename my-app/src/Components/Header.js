@@ -15,21 +15,21 @@ function Header() {
           </div>
           <div>
             <ul className="navbar-menu mb-0">
-              <li><a className="active" href="#">&lt; Service &gt;</a></li>
-              <li><a className="" href="#">Works</a></li>
-              <li><a className="" href="#">Notes</a></li>
-              <li><a className="" href="#">Contacts</a></li>
+              <li><a className="active" href="\">&lt; Service &gt;</a></li>
+              <li><a className="" href="\">Works</a></li>
+              <li><a className="" href="\">Notes</a></li>
+              <li><a className="" href="\">Contacts</a></li>
             </ul>
           </div>
           <div>
             <ul className="social-media mb-0">
               <li>
                 <i className="fa-brands fa-linkedin-in"></i>
-                <a href="" target="_blank">LinkedIn</a>
+                <a href="\" target="_blank">LinkedIn</a>
               </li>
               <li>
                 <i className="fa-brands fa-github"></i>
-                <a href="" target="_blank">Github</a>
+                <a href="\" target="_blank">Github</a>
               </li>
               <li>
                 <i className="fa-regular fa-envelope"></i>

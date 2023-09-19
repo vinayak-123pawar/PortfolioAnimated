@@ -6,7 +6,7 @@ function TestomonialSection() {
     <section class="testimonial">
       <div class="container">
         <div class="testimonial-title d-flex align-items-end">
-          <h2 class="me-3 mb-0">Testimonials</h2>
+          <h2 class="me-3 mb-0 TitleTesto">Testimonials</h2>
           <p class="m-0">What's client say about me</p>
         </div>
         <div class="testimonial-card">

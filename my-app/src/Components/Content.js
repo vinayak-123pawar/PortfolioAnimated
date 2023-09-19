@@ -19,7 +19,7 @@ function Content() {
         <section id="content-body">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-sm-6 d-flex align-items-center justify-content-between"                    >
+                    <div class="col-sm-6 mobileHeight">
                         <div>
                             <div class="developer-intro">
                                 <p>UI Developer</p>

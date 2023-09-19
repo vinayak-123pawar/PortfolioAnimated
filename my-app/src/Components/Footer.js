@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Section.scss"
 
 function Footer() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleSendMessage = async () => {
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, phone }),
+      });
+
+      const data = await response.json();
+      console.log('Server response:', data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
   return (
     <section
       id="footer"
@@ -41,6 +61,8 @@ function Footer() {
                   name="name"
                   id=""
                   placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   class="w-50"
@@ -48,6 +70,8 @@ function Footer() {
                   name="email"
                   id=""
                   placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div
@@ -59,10 +83,12 @@ function Footer() {
                   name="phone-number"
                   id=""
                   placeholder="Phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div class="d-flex justify-content-center align-items-center">
-                <button type="submit">Send</button>
+                <button onClick={handleSendMessage} type="submit">Send</button>
               </div>
             </div>
           </div>

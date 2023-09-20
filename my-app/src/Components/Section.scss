@@ -116,12 +116,6 @@ body::selection {
   margin: 0;
 }
 
-/* #content-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
-
 .navbar-title {
   display: flex;
   align-items: center;
@@ -213,9 +207,13 @@ body::selection {
 }
 
 /* ---------- SECTION BODY CONTENT ---------- */
-#content-body {
+.content-body {
   background-color: #2d2e32;
   height: 100vh;
+
+  .container {
+    padding: 85px 0 0;
+  }
 }
 
 .developer-intro {
@@ -246,6 +244,7 @@ body::selection {
   line-height: 50px;
   letter-spacing: -1.5px;
   padding: 35px 0 0 0;
+  color: #fff;
 }
 
 .body-title p {
@@ -286,13 +285,13 @@ body::selection {
 }
 
 .AnimationWrapper {
-  padding: 20% 0 0;
+  padding: 10% 0 0;
 }
 
 .hoodie-guy {
   position: absolute;
   background: url(../assets/Hoodie-guy.png) no-repeat center center;
-  top: 17%;
+  top: 0;
   height: -webkit-fill-available;
   width: 100%;
   background-size: contain;
@@ -300,7 +299,7 @@ body::selection {
 
 .circle {
   position: absolute;
-  top: 390px;
+  top: 300px;
   left: 220px;
   width: 100px;
   height: 100px;
@@ -645,6 +644,7 @@ body::selection {
   font-size: 24px;
   line-height: 36px;
   max-width: 85%;
+  color: #fff;
 }
 
 .testimonial-card i:last-child {
@@ -664,35 +664,39 @@ body::selection {
   border-radius: 10px;
   background-color: #2d2e32;
   border-bottom: 3px dashed #64f4ac;
-}
 
-.single-profile-card img {
-  max-height: 50px;
-  max-width: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
+  .ImageProfile {
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    margin-right: 20px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 
-.single-profile-card div h4 {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.single-profile-card div p {
-  margin: 4px 0;
-  padding: 0;
-  font-size: 12px;
-  color: #7c7d81;
-}
-
-.single-profile-card div p a {
-  color: #64f4ac;
-  text-decoration: none;
-}
-
-.single-profile-card div p a:hover {
-  text-decoration: underline;
+  div h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  div p {
+    margin: 4px 0;
+    padding: 0;
+    font-size: 12px;
+    color: #7c7d81;
+    a {
+      color: #64f4ac;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 /* ----------FOOTER---------- */

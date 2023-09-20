@@ -16,16 +16,16 @@ import "./Section.scss"
 
 function Content() {
     return (
-        <section id="content-body">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-sm-6 mobileHeight">
+        <section className="content-body">
+            <div className="container h-100">
+                <div className="row h-100">
+                    <div className="col-sm-6 mobileHeight">
                         <div>
-                            <div class="developer-intro">
+                            <div className="developer-intro">
                                 <p>UI Developer</p>
                                 <p>Designer</p>
                             </div>
-                            <div class="body-title">
+                            <div className="body-title">
                                 {/* <h1>Talk is cheap<br>Show me the code</h1>  */}
                                 <h1>UI Developing: Coding<br />and Designing Magic</h1>
                                 <p>
@@ -34,7 +34,7 @@ function Content() {
                                 </p>
                                 <a href="\">LET'S CHAT!</a>
                             </div>
-                            <div class="body-tail">
+                            <div className="body-tail">
                                 <h1>2</h1>
                                 <p>YEARS<br />EXPERIENCE</p>
                                 <h1>20</h1>
@@ -42,11 +42,11 @@ function Content() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 MobileOverFlow">
-                        <div class="position-relative h-100 AnimationWrapper">
-                            <div class="background-circle"></div>
-                            <div class="hoodie-guy"></div>
-                            <div class="circle">
+                    <div className="col-sm-6 MobileOverFlow">
+                        <div className="position-relative h-100 AnimationWrapper">
+                            <div className="background-circle"></div>
+                            <div className="hoodie-guy"></div>
+                            <div className="circle">
                                 <span style={{ '--i': 1 }}>
                                     <img src={adobe} alt='' className='height75' />
                                 </span>
@@ -93,7 +93,6 @@ function Content() {
                 </div>
             </div>
         </section>
-
     )
 }
 

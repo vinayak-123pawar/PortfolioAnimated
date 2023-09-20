@@ -1,21 +1,22 @@
 import React from 'react'
 import "./Section.scss"
+import ProfileImage from "../assets/client-profile.png"
 
 function TestomonialSection() {
   return (
-    <section class="testimonial">
-      <div class="container">
-        <div class="testimonial-title d-flex align-items-end">
-          <h2 class="me-3 mb-0 TitleTesto">Testimonials</h2>
-          <p class="m-0">What's client say about me</p>
+    <section className="testimonial">
+      <div className="container">
+        <div className="testimonial-title d-flex align-items-end">
+          <h2 className="me-3 mb-0 TitleTesto">Testimonials</h2>
+          <p className="m-0">What's client say about me</p>
         </div>
-        <div class="testimonial-card">
-          <div class="star-rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div className="testimonial-card">
+          <div className="star-rating">
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
             <p>5.0 Rating</p>
           </div>
           <h4>
@@ -23,15 +24,15 @@ function TestomonialSection() {
             working with him again. He's definitely the kind designer you can
             trust with a project from start to finish
           </h4>
-          <i class="fa-solid fa-quote-right"></i>
+          <i className="fa-solid fa-quote-right"></i>
         </div>
-        <div class="testimonial-card" style={{ display: "none" }}>
-          <div class="star-rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div className="testimonial-card" style={{ display: "none" }}>
+          <div className="star-rating">
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
             <p>4.5 Rating</p>
           </div>
           <h4>
@@ -39,15 +40,15 @@ function TestomonialSection() {
             and development allowed them to create a website that exceeded our
             expectations. We couldn't be happier with the end result.
           </h4>
-          <i class="fa-solid fa-quote-right"></i>
+          <i className="fa-solid fa-quote-right"></i>
         </div>
-        <div class="testimonial-card" style={{ display: "none" }}>
-          <div class="star-rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div className="testimonial-card" style={{ display: "none" }}>
+          <div className="star-rating">
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
             <p>4.0 Rating</p>
           </div>
           <h4>
@@ -55,30 +56,30 @@ function TestomonialSection() {
             They have the skills, experience, and passion to create stunning,
             functional solutions that will take your business to the next level.
           </h4>
-          <i class="fa-solid fa-quote-right"></i>
+          <i className="fa-solid fa-quote-right"></i>
         </div>
-        <div class="row">
-          <div class="col-sm-4 mb-4 mb-md-0">
-            <div class="single-profile-card">
-              <img src="assets/client-profile.png" alt="" />
+        <div className="row">
+          <div className="col-sm-4 mb-4 mb-md-0">
+            <div className="single-profile-card">
+              <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
               <div>
                 <h4>Vinayak Pawar</h4>
                 <p>VP & Co-Founder, <a href="/">Wiser</a></p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 mb-4 mb-md-0">
-            <div class="single-profile-card">
-              <img src="assets/client-profile.png" alt="" />
+          <div className="col-sm-4 mb-4 mb-md-0">
+            <div className="single-profile-card">
+              <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
               <div>
                 <h4>Vinayak Pawar</h4>
                 <p>VP & Co-Founder, <a href="/">Wiser</a></p>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 mb-4 mb-md-0">
-            <div class="single-profile-card">
-              <img src="assets/client-profile.png" alt="" />
+          <div className="col-sm-4 mb-4 mb-md-0">
+            <div className="single-profile-card">
+              <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
               <div>
                 <h4>Vinayak Pawar</h4>
                 <p>VP & Co-Founder, <a href="/">Wiser</a></p>

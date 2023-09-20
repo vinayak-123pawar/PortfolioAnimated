@@ -3,31 +3,31 @@ import "./Section.scss"
 
 function Introduction() {
   return (
-    <section class="introduction">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 d-flex align-items-center">
-            <div class="cards">
-              <div class="design-card">
+    <section className="introduction">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-6 d-flex align-items-center">
+            <div className="cards">
+              <div className="design-card">
                 <div>
                   <h3>UI/UX Design</h3>
-                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <i className="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <p>Create design products with unique ideas that matters</p>
                 <a href="/">20 PROJECTS</a>
               </div>
-              <div class="design-card">
+              <div className="design-card">
                 <div>
                   <h3>Frontend Development</h3>
-                  <i class="fa-solid fa-code"></i>
+                  <i className="fa-solid fa-code"></i>
                 </div>
                 <p>Making the Web Look Good</p>
                 <a href="/">20 PROJECTS</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="introduction-text">
+          <div className="col-sm-6">
+            <div className="introduction-text">
               <p>Introduction</p>
               <h2>Hello! I'm Vinayak Pawar</h2>
               <h4>Crafting User Experiences that Delight and Inspire</h4>
@@ -40,7 +40,7 @@ function Introduction() {
                 delightful experience for the clients
               </p>
             </div>
-            <div class="introduction-text" style={{ display: "none" }}>
+            <div className="introduction-text" style={{ display: "none" }}>
               <p>Introduction</p>
               <h2>Hello! I'm Vinayak Pawar</h2>
               <h4>The Web's & Mobile's Magician</h4>
@@ -52,7 +52,7 @@ function Introduction() {
                 both visually appealing and user-friendly.
               </p>
             </div>
-            <div class="introduction-text" style={{ display: "none" }}>
+            <div className="introduction-text" style={{ display: "none" }}>
               <p>Introduction</p>
               <h2>Hello! I'm Vinayak Pawar</h2>
               <h4>Coding with Efficiency</h4>

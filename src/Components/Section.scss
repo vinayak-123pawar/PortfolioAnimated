@@ -884,6 +884,9 @@ body::selection {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .LoginWrapper:before {
+    display: none;
+  }
   .body-title h1 {
     font-size: 30px;
     line-height: 30px;

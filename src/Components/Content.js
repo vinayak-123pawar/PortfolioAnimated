@@ -17,7 +17,7 @@ import "./Section.scss"
 function Content() {
     return (
         <section className="content-body">
-            <div className="container h-100">
+            <div className="container h-100 overflow-hidden">
                 <div className="row h-100">
                     <div className="col-sm-6 mobileHeight">
                         <div>
@@ -44,7 +44,7 @@ function Content() {
                     </div>
                     <div className="col-sm-6 MobileOverFlow">
                         <div className="position-relative h-100 AnimationWrapper">
-                            <div className="background-circle"></div>
+                            <div className="background-circle d-none d-md-block"></div>
                             <div className="hoodie-guy"></div>
                             <div className="circle">
                                 <span style={{ '--i': 1 }}>

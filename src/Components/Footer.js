@@ -1,31 +1,25 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import "./Section.scss"
+import emailjs from '@emailjs/browser';
 
-function Footer() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+const Footer = ({ onLogout }) => {
+  const form = useRef();
 
-  const handleSendMessage = async () => {
-    try {
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, phone }),
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_9vymx01', 'template_spruvoa', form.current, 'cRXj8kKzFzELrE6GA')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
       });
-
-      const data = await response.json();
-      console.log('Server response:', data);
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    e.target.reset()
   };
+
   return (
     <section
-      id="footer"
-      className="d-flex align-items-center justify-content-center"
+      className="footer d-flex align-items-center justify-content-center"
     >
       <div className="container">
         <div className="row">
@@ -46,11 +40,27 @@ function Footer() {
                 <li className="ps-0"><a href="/">Contacts</a></li>
               </ul>
             </div>
+            <div>
+              <ul className="social-media mb-0">
+                <li>
+                  <i className="fa-brands fa-linkedin-in"></i>
+                  <a href="\" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                  <i className="fa-brands fa-github"></i>
+                  <a href="\" target="_blank">Github</a>
+                </li>
+                <li>
+                  <i className="fa-regular fa-envelope"></i>
+                  <a href="mailto:pawar0101vinayak@gmail.com">Email</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="col-sm-6">
             <h2 className="mb-4">Let's make something amazing together</h2>
 
-            <div className="email-form">
+            <form className="email-form" ref={form} onSubmit={sendEmail}>
               <h2 className="mb-4">Start by <span>saying hi</span></h2>
               <div
                 className="d-flex justify-content-between align-items-center mb-4"
@@ -58,20 +68,16 @@ function Footer() {
                 <input
                   className="w-50 me-2"
                   type="text"
-                  name="name"
-                  id=""
+                  name="user_name"
                   placeholder="Your name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  required
                 />
                 <input
                   className="w-50"
                   type="email"
-                  name="email"
-                  id=""
+                  name="user_email"
                   placeholder="Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
               <div
@@ -80,17 +86,20 @@ function Footer() {
                 <input
                   className="w-50 me-2"
                   type="number"
-                  name="phone-number"
-                  id=""
+                  name="user_phone"
                   placeholder="Phone number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
+                  required
                 />
               </div>
-              <div className="d-flex justify-content-center align-items-center">
-                <button onClick={handleSendMessage} type="submit">Send</button>
+              <div
+                className="d-flex justify-content-center align-items-center mb-4"
+              >
+                <textarea name="message" cols={30} rows={10}></textarea>
               </div>
-            </div>
+              <div className="d-flex justify-content-center align-items-center">
+                <button type="submit">Send</button>
+              </div>
+            </form>
           </div>
           <div className="d-flex align-items-center justify-content-between py-4">
             <div className="footer-title">
@@ -130,6 +139,9 @@ function Footer() {
               </a>
             </div>
           </div>
+          <button className="glow-on-hover" onClick={onLogout}>
+            Logout
+          </button>
         </div>
       </div>
     </section>

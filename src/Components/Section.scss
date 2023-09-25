@@ -81,7 +81,7 @@ body {
 
 body::selection {
   color: #000000;
-  background: #FF6D00;
+  background: #ff6d00;
 }
 
 ::-webkit-scrollbar {
@@ -103,7 +103,7 @@ body::selection {
 }
 /* ---------- SECTION HEADER ---------- */
 .header {
-  padding: 20px 0;
+  padding: 15px 0;
   background-color: #2d2e3273;
   border: 1px solid #2d2e3240;
   box-shadow: 0 0 10px 1px #00000040;
@@ -136,6 +136,14 @@ body::selection {
   font-family: "Raleway", sans-serif;
 }
 
+.mainPageWrapper {
+  .glow-on-hover {
+    height: auto;
+    padding: 5px 15px;
+    width: auto;
+  }
+}
+
 .navbar-menu {
   display: flex;
   justify-content: center;
@@ -149,7 +157,7 @@ body::selection {
 }
 
 .navbar-menu .active {
-  color: #FF6D00;
+  color: #ff6d00;
   font-weight: 900;
 }
 
@@ -162,7 +170,7 @@ body::selection {
 }
 
 .navbar-menu li a:hover {
-  color: #FF6D00;
+  color: #ff6d00;
   font-weight: 900;
 }
 
@@ -224,7 +232,7 @@ body::selection {
 .developer-intro p {
   padding: 5px 10px;
   margin: 0 20px 0 0;
-  background-color: #FF6D00;
+  background-color: #ff6d00;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -257,7 +265,7 @@ body::selection {
 
 .body-title a {
   font-size: 16px;
-  color: #FF6D00;
+  color: #ff6d00;
   font-weight: 600;
   padding: 20px 0;
   margin: 20px 0;
@@ -385,7 +393,7 @@ body::selection {
 }
 
 .design-card:hover div {
-  color: #FF6D00;
+  color: #ff6d00;
 }
 
 .design-card div h3 {
@@ -570,7 +578,7 @@ body::selection {
 }
 
 .all-projects a {
-  color: #FF6D00;
+  color: #ff6d00;
 }
 
 .all-projects a h3 {
@@ -624,7 +632,7 @@ body::selection {
 .star-rating {
   display: flex;
   flex-direction: row;
-  color: #FF6D00;
+  color: #ff6d00;
   align-items: center;
   margin: 0 0 20px 0;
   padding: 0;
@@ -665,7 +673,7 @@ body::selection {
   padding: 10px;
   border-radius: 10px;
   background-color: #2d2e32;
-  border-bottom: 3px dashed #FF6D00;
+  border-bottom: 3px dashed #ff6d00;
 
   .ImageProfile {
     height: 50px;
@@ -692,7 +700,7 @@ body::selection {
     font-size: 12px;
     color: #7c7d81;
     a {
-      color: #FF6D00;
+      color: #ff6d00;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -705,6 +713,13 @@ body::selection {
 .footer {
   background-color: #25262a;
   height: 100vh;
+  padding-top: 85px;
+
+  .amazingTitle {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .footer-left h2 {
@@ -713,13 +728,13 @@ body::selection {
 }
 
 .footer-left h2 a {
-  color: #FF6D00;
+  color: #ff6d00;
   text-underline-offset: 8px;
 }
 
 .email-form {
   border-radius: 10px;
-  padding: 60px 20px 40px 20px;
+  padding: 15px 20px;
   border: 1px solid #2d2e3240;
   background-color: #2d2e3273;
   box-shadow: 0 0 10px 1px #00000040;
@@ -734,7 +749,7 @@ body::selection {
 
 .email-form h2 span {
   font-weight: 600;
-  color: #FF6D00;
+  color: #ff6d00;
 }
 
 .email-form input {
@@ -742,7 +757,11 @@ body::selection {
   margin: 0;
   border-radius: 8px;
   border: none;
-  padding: 4px 8px;
+  padding: 10px;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .email-form div {
@@ -752,13 +771,22 @@ body::selection {
   justify-content: space-between;
 }
 
+.TextAreaWrapper {
+  border-radius: 8px;
+  resize: none;
+  padding: 10px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 .email-form button {
   height: 36px;
   width: 100px;
   margin: 0;
   border-radius: 8px;
   border: none;
-  background-color: #FF6D00;
+  background-color: #ff6d00;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
@@ -814,7 +842,7 @@ body::selection {
 }
 
 .footer-menu li a:hover {
-  color: #FF6D00;
+  color: #ff6d00;
   font-weight: 900;
 }
 

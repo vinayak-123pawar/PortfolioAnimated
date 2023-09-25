@@ -92,7 +92,7 @@ import React, { useState, useEffect } from "react";
 import Login from "./Components/Login/Login";
 import MainScreen from "./Components/Login/MainScreen";
 import "./App.scss";
-import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -119,9 +119,9 @@ const App = () => {
   return (
     <div>
       {loggedIn ? (
-        <div>
+        <div className="mainPageWrapper">
+          <Header onLogout={handleLogout} />
           <MainScreen />
-          <Footer onLogout={handleLogout} />
         </div>
       ) : (<>
         <Login onLogin={handleLogin} />

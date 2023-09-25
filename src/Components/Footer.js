@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import "./Section.scss"
 import emailjs from '@emailjs/browser';
 
-const Footer = ({ onLogout }) => {
+function Footer () {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -58,7 +58,7 @@ const Footer = ({ onLogout }) => {
             </div>
           </div>
           <div className="col-sm-6">
-            <h2 className="mb-4">Let's make something amazing together</h2>
+            <h2 className="mb-4 amazingTitle">Let's make something amazing together</h2>
 
             <form className="email-form" ref={form} onSubmit={sendEmail}>
               <h2 className="mb-4">Start by <span>saying hi</span></h2>
@@ -94,7 +94,7 @@ const Footer = ({ onLogout }) => {
               <div
                 className="d-flex justify-content-center align-items-center mb-4"
               >
-                <textarea name="message" cols={30} rows={10}></textarea>
+                <textarea className='TextAreaWrapper' name="message" cols={30} rows={3} placeholder='message' required></textarea>
               </div>
               <div className="d-flex justify-content-center align-items-center">
                 <button type="submit">Send</button>
@@ -139,9 +139,6 @@ const Footer = ({ onLogout }) => {
               </a>
             </div>
           </div>
-          <button className="glow-on-hover" onClick={onLogout}>
-            Logout
-          </button>
         </div>
       </div>
     </section>

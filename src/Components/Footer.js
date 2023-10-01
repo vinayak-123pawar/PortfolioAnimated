@@ -44,7 +44,7 @@ function Footer() {
               <ul className="social-media mb-0">
                 <li>
                   <i className="fa-brands fa-linkedin-in"></i>
-                  <a href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">LinkedIn</a>
                 </li>
                 <li>
                   <i className="fa-brands fa-github"></i>
@@ -92,38 +92,38 @@ function Footer() {
           <div className="d-flex align-items-center justify-content-between py-4 flex-wrap">
             <div className="footer-title text-white d-flex align-items-center">
               Designed Or Built By :
-              <a className="ms-1 d-flex align-items-center" href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank">
+              <a className="ms-1 d-flex align-items-center"  href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">
                 <h3 className="title-first-name mb-0">Vinayak</h3>
                 <h3 className="title-last-name mb-0">Pawar</h3>
               </a>
             </div>
             <div className="social-icons">
               <a
-                href="/"
+                href="\"
                 target="_blank"
               >
                 <i className="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="/" target="_blank">
+              <a href="\" target="_blank">
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href="/" target="_blank">
+              <a href="\" target="_blank">
                 <i className="fa-regular fa-envelope"></i>
               </a>
               <a
-                href="/"
+                href="\"
                 target="_blank"
               >
                 <i className="fa-brands fa-twitter"></i>
               </a>
               <a
-                href="/"
+                href="\"
                 target="_blank"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a
-                href="/"
+                href="\"
                 target="_blank"
               >
                 <i className="fa-brands fa-facebook"></i>

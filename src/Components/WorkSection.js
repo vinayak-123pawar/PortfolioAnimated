@@ -37,7 +37,7 @@ function WorkSection() {
               </a>
               <p>
                 * Some projects are not allowed to publish by NDA<br />if you
-                want to see more. <a href="/">CONTACT</a>
+                want to see more. <a href="tel:9767788981">CONTACT</a>
               </p>
             </div>
           </Col>

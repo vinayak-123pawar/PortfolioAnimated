@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Section.scss"
 
-const Header = ({ onLogout }) => {
+// const Header = ({ onLogout }) => {
+function Header() {
   return (
     <section className="header w-100 d-flex align-items-center">
       <div className="container">
@@ -13,11 +14,11 @@ const Header = ({ onLogout }) => {
             <h3 className="title-last-name mb-0">Pawar</h3>
             {/* <img className="logoImage" src="assets/SVGIcons/logo.svg" /> */}
           </div>
-          <div>
+          {/* <div>
             <button className="glow-on-hover" onClick={onLogout}>
               Logout
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

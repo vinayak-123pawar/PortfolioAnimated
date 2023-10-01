@@ -274,6 +274,9 @@ body::selection {
 .body-tail {
   display: flex;
   align-items: flex-start;
+  h1{
+    color: #cacaca;
+  }
 }
 
 .body-tail p {

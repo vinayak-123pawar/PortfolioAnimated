@@ -5,9 +5,11 @@ import WorkSection from "../WorkSection";
 import TestomonialSection from "../TestomonialSection";
 import Introduction from "../Introduction";
 import Footer from "../Footer";
+import Header from "../Header";
 
 function MainScreen() {
   return (<>
+    <Header />
     <Content />
     <Introduction />
     <WorkSection />

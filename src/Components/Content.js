@@ -23,6 +23,7 @@ function Content() {
                         <div>
                             <div className="developer-intro">
                                 <p>UI Developer</p>
+                                <p>Frontend Developer</p>
                                 <p>Designer</p>
                             </div>
                             <div className="body-title">
@@ -32,7 +33,6 @@ function Content() {
                                     I design and code beautifully simple things,<br />and I love
                                     what I do.
                                 </p>
-                                <a href="\">LET'S CHAT!</a>
                             </div>
                             <div className="body-tail">
                                 <h1>2</h1>

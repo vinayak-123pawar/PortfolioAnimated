@@ -6,18 +6,18 @@ import Image3 from "../assets/Projects/project-3.png"
 
 function WorkSection() {
   return (
-    <section class="latest-works d-none d-md-block">
-      <div class="container">
-        <div class="d-flex justify-content-between w-100 flex-wrap">
-          <div class="left-project">
-            <div class="latest-work-title">
+    <section className="latest-works d-none d-md-block">
+      <div className="container">
+        <div className="d-flex justify-content-between w-100 flex-wrap">
+          <div className="left-project">
+            <div className="latest-work-title">
               <h3>Latest Works</h3>
               <p>Perfect solutions for digital experience</p>
             </div>
-            <div class="project-card project-card-1">
-              <div class="title">
+            <div className="project-card project-card-1">
+              <div className="title">
                 <h3>Finaco</h3>
-                <div class="tech-stack">
+                <div className="tech-stack">
                   <p>GastbyJS</p>
                   <p>ReactJS</p>
                   <p>HTML</p>
@@ -26,11 +26,11 @@ function WorkSection() {
               <img
                 src={Image1}
                 alt=""
-                class="project-img-2"
+                className="project-img-2"
               />
             </div>
 
-            <div class="all-projects">
+            <div className="all-projects">
               <a href="/">
                 <h3>ALL PROJECTS</h3>
               </a>
@@ -40,11 +40,11 @@ function WorkSection() {
               </p>
             </div>
           </div>
-          <div class="right-project">
-            <div class="project-card project-card-2">
-              <div class="title">
+          <div className="right-project">
+            <div className="project-card project-card-2">
+              <div className="title">
                 <h3>Lewis</h3>
-                <div class="tech-stack">
+                <div className="tech-stack">
                   <p>Flutter</p>
                   <p>Django</p>
                 </div>
@@ -52,13 +52,13 @@ function WorkSection() {
               <img
                 src={Image2}
                 alt=""
-                class="project-img-1"
+                className="project-img-1"
               />
             </div>
-            <div class="project-card project-card-3">
-              <div class="title">
+            <div className="project-card project-card-3">
+              <div className="title">
                 <h3>Focus</h3>
-                <div class="tech-stack">
+                <div className="tech-stack">
                   <p>ReactJS</p>
                   <p>HTML</p>
                 </div>
@@ -66,7 +66,7 @@ function WorkSection() {
               <img
                 src={Image3}
                 alt=""
-                class="project-img-3"
+                className="project-img-3"
               />
             </div>
           </div>

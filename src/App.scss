@@ -1,0 +1,43 @@
+.dark-mode {
+  color: white;
+
+  main {
+    background-color: #1a202c;
+  }
+
+  #toggle {
+    background-color: white;
+
+    .toggle-inner {
+      background-color: #1a202c;
+    }
+  }
+}
+/* App.css */
+
+/* Style for the logo container */
+.logo-splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Adjust background color as needed */
+  z-index: 9999; /* Ensure it's above other content */
+  transition: opacity 1s; /* Add a fade-in effect */
+}
+
+/* Hide the logo when not shown */
+.logo-splash.hidden {
+  opacity: 0;
+  pointer-events: none; /* Disable clicks on the logo */
+}
+
+/* Style for the logo image */
+.logo-splash img {
+  max-width: 80%; /* Adjust the logo size as needed */
+  max-height: 80%;
+}

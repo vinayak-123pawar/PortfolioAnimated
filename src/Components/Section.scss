@@ -274,7 +274,7 @@ body::selection {
 .body-tail {
   display: flex;
   align-items: flex-start;
-  h1{
+  h1 {
     color: #cacaca;
   }
 }
@@ -456,14 +456,8 @@ body::selection {
 /* ----------LATEST WORKS---------- */
 .latest-works {
   background-color: #25262a;
-  padding: 75px 0 0;
-}
-
-.left-project {
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 75px 0 30px;
+  // height: 100vh;
 }
 
 .latest-work-title h3 {
@@ -482,8 +476,8 @@ body::selection {
 
 .project-card {
   min-width: 35vw;
-  min-height: 60vh;
-  max-height: 80vh;
+  min-height: 50vh;
+  max-height: 50vh;
   background-color: #2d3037;
   padding: 20px;
   border-radius: 15px;
@@ -538,11 +532,11 @@ body::selection {
 }
 
 .project-img-1 {
-  height: 50vh;
+  height: 25vh;
   top: 75px;
-  left: 15px;
+  left: 40px;
   object-fit: cover;
-  transform: scale(1.4) rotate(-5deg);
+  transform: scale(1.4) rotate(0deg);
   transition: 0.3s ease-in-out;
 }
 
@@ -568,7 +562,7 @@ body::selection {
 }
 
 .project-img-3 {
-  width: 30vw;
+  // width: 30vw;
   top: 50px;
   left: 75px;
   border-radius: 10px;
@@ -748,6 +742,7 @@ body::selection {
 
 .email-form h2 {
   font-size: 25px;
+  color: #cacaca;
 }
 
 .email-form h2 span {
@@ -924,6 +919,11 @@ body::selection {
     letter-spacing: 0;
   }
 
+  .developer-intro p {
+    font-size: 12px;
+    margin: 0 5px 0 0;
+  }
+
   .mobileHeight {
     height: 50%;
   }
@@ -991,6 +991,10 @@ body::selection {
 
   .footer {
     height: auto;
+    .title-first-name,
+    .title-last-name {
+      font-size: 20px;
+    }
   }
   .email-form {
     backdrop-filter: unset;

@@ -1,26 +1,27 @@
 import React from 'react'
 import "./Section.scss"
-import Image1 from "../assets/Projects/project-1.png"
-import Image2 from "../assets/Projects/project-2.png"
-import Image3 from "../assets/Projects/project-3.png"
+import Image1 from "../Images/QualitiaSoft.PNG"
+import Image2 from "../Images/Utech.PNG"
+import Image3 from "../Images/Spolto.PNG"
+import { Col, Row } from 'react-bootstrap-v5'
 
 function WorkSection() {
   return (
     <section className="latest-works d-none d-md-block">
       <div className="container">
-        <div className="d-flex justify-content-between w-100 flex-wrap">
-          <div className="left-project">
+        <Row>
+          <Col md={6}>
             <div className="latest-work-title">
               <h3>Latest Works</h3>
               <p>Perfect solutions for digital experience</p>
             </div>
             <div className="project-card project-card-1">
               <div className="title">
-                <h3>Finaco</h3>
+                <h3>Qualitia</h3>
                 <div className="tech-stack">
-                  <p>GastbyJS</p>
                   <p>ReactJS</p>
                   <p>HTML</p>
+                  <p>Scss</p>
                 </div>
               </div>
               <img
@@ -39,14 +40,16 @@ function WorkSection() {
                 want to see more. <a href="/">CONTACT</a>
               </p>
             </div>
-          </div>
-          <div className="right-project">
+          </Col>
+          <Col md={6}>
             <div className="project-card project-card-2">
               <div className="title">
-                <h3>Lewis</h3>
+                <h3>Utech</h3>
                 <div className="tech-stack">
-                  <p>Flutter</p>
-                  <p>Django</p>
+                  <p>ReactJS</p>
+                  <p>HTML</p>
+                  <p>Css</p>
+                  <p>Tailwind Css</p>
                 </div>
               </div>
               <img
@@ -57,10 +60,11 @@ function WorkSection() {
             </div>
             <div className="project-card project-card-3">
               <div className="title">
-                <h3>Focus</h3>
+                <h3>Spolto</h3>
                 <div className="tech-stack">
                   <p>ReactJS</p>
                   <p>HTML</p>
+                  <p>Scss</p>
                 </div>
               </div>
               <img
@@ -69,8 +73,8 @@ function WorkSection() {
                 className="project-img-3"
               />
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </section>
   )

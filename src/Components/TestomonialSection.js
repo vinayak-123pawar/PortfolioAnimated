@@ -68,24 +68,6 @@ function TestomonialSection() {
               </div>
             </div>
           </div>
-          <div className="col-sm-4 mb-4 mb-md-0">
-            <div className="single-profile-card">
-              <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
-              <div>
-                <h4>Vinayak Pawar</h4>
-                <p>VP & Co-Founder, <a href="/">Wiser</a></p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-4 mb-4 mb-md-0">
-            <div className="single-profile-card">
-              <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
-              <div>
-                <h4>Vinayak Pawar</h4>
-                <p>VP & Co-Founder, <a href="/">Wiser</a></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

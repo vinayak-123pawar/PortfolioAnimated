@@ -15,7 +15,6 @@ function MainScreen() {
     <WorkSection />
     <TestomonialSection />
     <Footer />
-
   </>
   );
 };

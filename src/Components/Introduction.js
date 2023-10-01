@@ -14,7 +14,7 @@ function Introduction() {
                   <i className="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <p>Create design products with unique ideas that matters</p>
-                <a href="/">20 PROJECTS</a>
+                <a href="/">3 PROJECTS</a>
               </div>
               <div className="design-card">
                 <div>
@@ -22,7 +22,7 @@ function Introduction() {
                   <i className="fa-solid fa-code"></i>
                 </div>
                 <p>Making the Web Look Good</p>
-                <a href="/">20 PROJECTS</a>
+                <a href="/">8 PROJECTS</a>
               </div>
             </div>
           </div>

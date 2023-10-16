@@ -15,6 +15,15 @@ function WorkSection() {
               <h3>Latest Works</h3>
               <p>Perfect solutions for digital experience</p>
             </div>
+            <div className="all-projects">
+              <a href="/">
+                <h3>ALL PROJECTS</h3>
+              </a>
+              <p>
+                * Some projects are not allowed to publish by NDA<br />if you
+                want to see more. <a href="tel:9767788981">CONTACT</a>
+              </p>
+            </div>
             <div className="project-card project-card-1">
               <div className="title">
                 <h3>Qualitia</h3>
@@ -29,16 +38,6 @@ function WorkSection() {
                 alt=""
                 className="project-img-2"
               />
-            </div>
-
-            <div className="all-projects">
-              <a href="/">
-                <h3>ALL PROJECTS</h3>
-              </a>
-              <p>
-                * Some projects are not allowed to publish by NDA<br />if you
-                want to see more. <a href="tel:9767788981">CONTACT</a>
-              </p>
             </div>
           </Col>
           <Col md={6}>

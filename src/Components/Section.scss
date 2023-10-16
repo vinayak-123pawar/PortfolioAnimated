@@ -658,6 +658,7 @@ body::selection {
 }
 
 .testimonial-card {
+  position: relative;
   max-height: 300px;
   width: 100%;
   background-color: #2d2e32;
@@ -697,9 +698,9 @@ body::selection {
 }
 
 .testimonial-card i:last-child {
-  position: relative;
-  top: -225px;
-  left: -3%;
+  position: absolute;
+  top: -25px;
+  left: 5%;
   color: #ffffff40;
   font-size: 60px;
   margin: 0;
@@ -1000,6 +1001,10 @@ body::selection {
 
   .project-card {
     padding: 12px;
+
+    .title h3 {
+      font-size: 15px;
+    }
   }
 
   .testimonial {
@@ -1009,6 +1014,11 @@ body::selection {
 
   .testimonial-card {
     max-height: none;
+    padding: 20px;
+
+    h4 {
+      max-width: 100%;
+    }
   }
 
   @keyframes animateCircle {

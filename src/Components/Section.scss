@@ -407,16 +407,24 @@ body::selection {
   border-radius: 8px;
   box-shadow: 0 0 10px #00000040;
   transition: 0.5s ease;
-}
 
-.design-card:hover {
-  box-shadow: 0 0 15px #00000080;
-  cursor: pointer;
-}
+  &:hover {
+    box-shadow: 0 0 15px #00000080;
+    cursor: pointer;
+    p {
+      color: #000000;
+      font-weight: 700;
+    }
+    .LogoWrap {
+      filter: brightness(0) saturate(100%) invert(46%) sepia(18%)
+        saturate(5958%) hue-rotate(1deg) brightness(103%) contrast(105%);
+    }
+  }
 
-.design-card:hover p {
-  color: #000000;
-  font-weight: 700;
+  .LogoWrap {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .design-card div {

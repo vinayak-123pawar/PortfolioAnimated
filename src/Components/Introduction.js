@@ -12,28 +12,28 @@ function Introduction() {
           <Row>
             {Info.map((Info) => (
               <Col sm={6}>
-                <div className="design-card">
-                  <div>
-                    <h3>{Info.Role}</h3>
-                    <div key={Info.id}>
-                      <img src={Info.image} alt={Info.description} />
+                <div>
+                  <div className="design-card">
+                    <div>
+                      <h3>{Info.Role}</h3>
+                      <img className='LogoWrap' key={Info.id} src={Info.src} alt={Info.Imagedescription} />
                     </div>
+                    <p>{Info.Description}</p>
+                    <a href="/">{Info.Quantity}</a>
                   </div>
-                  <p>{Info.Description}</p>
-                  <a href="/">{Info.Quantity}</a>
-                </div>
-                <div className="introduction-text">
-                  <p>{Info.IntroTitle}</p>
-                  <h2>{Info.WelcomeIntro}</h2>
-                  <h4>{Info.Work}</h4>
-                  <p>{Info.Content} </p>
+                  <div className="introduction-text">
+                    <p>{Info.IntroTitle}</p>
+                    <h2>{Info.WelcomeIntro}</h2>
+                    <h4>{Info.Work}</h4>
+                    <p>{Info.Content} </p>
+                  </div>
                 </div>
               </Col>
             ))}
           </Row>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

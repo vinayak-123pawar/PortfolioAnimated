@@ -37,7 +37,7 @@ function Content() {
                             <div className="body-tail">
                                 <h1>2</h1>
                                 <p>YEARS<br />EXPERIENCE</p>
-                                <h1>10</h1>
+                                <h1>5</h1>
                                 <p>PROJECTS<br />COMPLETED</p>
                             </div>
                         </div>

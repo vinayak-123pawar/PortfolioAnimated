@@ -121,6 +121,25 @@ body::selection {
   align-items: center;
 }
 
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModalPortal {
+  z-index: 9999;
+  position: relative;
+
+  .ReactModal__Overlay {
+    background-color: #2d2e32 !important;
+    overflow: hidden;
+    color: #fff;
+
+    .ReactModal__Content {
+      height: 100vh;
+    }
+  }
+}
+
 .title-first-name {
   padding: 0 7.5px 0 0;
   font-weight: 600;
@@ -191,7 +210,7 @@ body::selection {
 }
 
 .social-media li i {
-  font-size: 14px;
+  font-size: 20px;
   transition: 0.3s ease;
 }
 .social-media li a {
@@ -202,18 +221,35 @@ body::selection {
   transition: 0.3s ease;
 }
 
-.social-media li:nth-child(1):hover i {
-  color: #0077b5;
-}
+.social-media li {
+  &:hover a {
+    font-weight: 800;
+  }
 
-.social-media li:nth-child(3):hover i {
-  color: #ea4335;
-}
+  &:nth-child(1) i {
+    color: #fff;
+  }
 
-.social-media li:hover a {
-  font-weight: 800;
-}
+  &:nth-child(2) i {
+    color: #fff;
+  }
 
+  &:nth-child(3) i {
+    color: #fff;
+  }
+
+  &:nth-child(1):hover i {
+    color: #0077b5;
+  }
+
+  &:nth-child(2):hover i {
+    color: rgb(33, 37, 41);
+  }
+
+  &:nth-child(3):hover i {
+    color: #ea4335;
+  }
+}
 /* ---------- SECTION BODY CONTENT ---------- */
 .content-body {
   background-color: #2d2e32;
@@ -312,14 +348,14 @@ body::selection {
   position: absolute;
   top: 300px;
   left: 220px;
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
   transform-style: preserve-3d;
   animation: animateCircle 40s linear infinite;
 }
 
-.height75 {
-  height: 75px;
+.height70 {
+  height: 70px;
 }
 
 @keyframes animateCircle {
@@ -335,8 +371,6 @@ body::selection {
 
 .circle span {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: #2d2e32;
@@ -344,19 +378,17 @@ body::selection {
   border-radius: 50%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * calc(360deg / 12))) translateZ(300px);
+  transform: rotateY(calc(var(--i) * calc(360deg / 12))) translateZ(260px);
 }
 
 .circle span img {
   position: relative;
-  top: 12px;
-  left: 12px;
   object-fit: cover;
 }
 
 /* ----------INTRODUCTION---------- */
 .introduction {
-  background-color: #25262a;
+  background-color: #2d2e32;
   height: 100vh;
   padding: 75px 0 0;
 }
@@ -455,9 +487,9 @@ body::selection {
 
 /* ----------LATEST WORKS---------- */
 .latest-works {
-  background-color: #25262a;
+  // background-color: #25262a;
+  background-color: #2d2e32;
   padding: 75px 0 30px;
-  // height: 100vh;
 }
 
 .latest-work-title h3 {
@@ -545,8 +577,8 @@ body::selection {
 }
 
 .project-img-2 {
-  width: 20vw;
-  height: 27vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
   top: 100px;
@@ -595,7 +627,8 @@ body::selection {
   height: 100vh;
   width: 100%;
   padding: 75px 0 0;
-  background-color: #25262a;
+  // background-color: #25262a;
+  background-color: #2d2e32;
 }
 
 .TitleTesto {
@@ -624,6 +657,7 @@ body::selection {
   border-radius: 8px;
   margin: 30px 0;
   display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
 }
 
 .star-rating {
@@ -670,6 +704,7 @@ body::selection {
   padding: 10px;
   border-radius: 10px;
   background-color: #2d2e32;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
   border-bottom: 3px dashed #ff6d00;
 
   .ImageProfile {
@@ -708,7 +743,8 @@ body::selection {
 
 /* ----------FOOTER---------- */
 .footer {
-  background-color: #25262a;
+  // background-color: #25262a;
+  background-color: #2d2e32;
   height: 100vh;
   padding-top: 85px;
 
@@ -856,18 +892,10 @@ body::selection {
 }
 
 .social-icons a:nth-child(1) i:hover {
-  color: #0072b1;
-}
-
-.social-icons a:nth-child(3) i:hover {
-  color: #ea4335;
-}
-
-.social-icons a:nth-child(4) i:hover {
   color: #00acee;
 }
 
-.social-icons a:nth-child(5) i:hover {
+.social-icons a:nth-child(2) i:hover {
   color: transparent;
   background: -webkit-radial-gradient(
     30% 107%,
@@ -907,7 +935,7 @@ body::selection {
   -webkit-background-clip: text;
 }
 
-.social-icons a:nth-child(6) i:hover {
+.social-icons a:nth-child(3) i:hover {
   color: #3b5998;
 }
 
@@ -962,8 +990,13 @@ body::selection {
     }
   }
 
+  .project-card {
+    padding: 12px;
+  }
+
   .testimonial {
     height: auto;
+    padding: 0;
   }
 
   .testimonial-card {
@@ -987,10 +1020,16 @@ body::selection {
 
   .introduction {
     height: auto;
+    padding: 20px 0 0;
+  }
+
+  .latest-works {
+    padding: 30px 0;
   }
 
   .footer {
     height: auto;
+    padding-top: 20px;
     .title-first-name,
     .title-last-name {
       font-size: 20px;

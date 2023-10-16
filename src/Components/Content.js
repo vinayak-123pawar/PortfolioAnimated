@@ -37,7 +37,7 @@ function Content() {
                             <div className="body-tail">
                                 <h1>2</h1>
                                 <p>YEARS<br />EXPERIENCE</p>
-                                <h1>20</h1>
+                                <h1>10</h1>
                                 <p>PROJECTS<br />COMPLETED</p>
                             </div>
                         </div>
@@ -47,45 +47,41 @@ function Content() {
                             <div className="background-circle d-none d-md-block"></div>
                             <div className="hoodie-guy"></div>
                             <div className="circle">
-                                <span style={{ '--i': 1 }}>
-                                    <img src={adobe} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 1 }}>
+                                    <img src={adobe} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 2 }} >
-                                    <img src={premierePro} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 2 }} >
+                                    <img src={premierePro} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 3 }}>
-                                    <img src={htmlLogo} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 3 }}>
+                                    <img src={htmlLogo} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 4 }}>
-                                    <img src={figmaLogo} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 4 }}>
+                                    <img src={figmaLogo} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 5 }}>
-                                    <img src={cssLogo} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 5 }}>
+                                    <img src={cssLogo} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 6 }}
-                                ><img src={javascriptLogo} alt='' className='height75'
-                                    /></span>
-                                <span style={{ '--i': 7 }}
-                                ><img
-                                        src={illustrator}
-                                        alt='' className='height75'
-                                    /></span>
-                                <span style={{ '--i': 8 }}
-                                ><img src={Github} alt='' className='height75'
-                                    /></span>
-                                <span style={{ '--i': 9 }}
-                                ><img
-                                        src={react}
-                                        alt='' className='height75'
-                                    /></span>
-                                <span style={{ '--i': 10 }} >
-                                    <img src={cLogo} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 6 }}>
+                                    <img src={javascriptLogo} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 11 }} >
-                                    <img src={cpLogo} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 7 }}                                >
+                                    <img src={illustrator} alt='' className='height70' />
                                 </span>
-                                <span style={{ '--i': 12 }}>
-                                    <img src={java} alt='' className='height75' />
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 8 }}       >
+                                    <img src={Github} alt='' className='height70' />
+                                </span>
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 9 }}>
+                                    <img src={react} alt='' className='height70' />
+                                </span>
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 10 }} >
+                                    <img src={cLogo} alt='' className='height70' />
+                                </span>
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 11 }} >
+                                    <img src={cpLogo} alt='' className='height70' />
+                                </span>
+                                <span className='d-flex align-items-center justify-content-center' style={{ '--i': 12 }}>
+                                    <img src={java} alt='' className='height70' />
                                 </span>
                             </div>
                         </div>

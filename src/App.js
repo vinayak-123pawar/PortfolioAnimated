@@ -79,7 +79,7 @@ function App() {
     // Hide the logo after 10 seconds
     const timeout = setTimeout(() => {
       setShowLogo(false);
-    }, 5000); // 5 seconds in milliseconds
+    }, 4000); // 4 seconds in milliseconds
 
     return () => clearTimeout(timeout);
   }, []);

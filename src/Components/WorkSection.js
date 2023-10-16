@@ -7,7 +7,7 @@ import { Col, Row } from 'react-bootstrap-v5'
 
 function WorkSection() {
   return (
-    <section className="latest-works d-none d-md-block">
+    <section className="latest-works">
       <div className="container">
         <Row>
           <Col md={6}>
@@ -48,7 +48,7 @@ function WorkSection() {
                 <div className="tech-stack">
                   <p>ReactJS</p>
                   <p>HTML</p>
-                  <p>Css</p>
+                  <p>Scss</p>
                   <p>Tailwind Css</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ function WorkSection() {
                 <div className="tech-stack">
                   <p>ReactJS</p>
                   <p>HTML</p>
-                  <p>Scss</p>
+                  <p>Css</p>
                 </div>
               </div>
               <img

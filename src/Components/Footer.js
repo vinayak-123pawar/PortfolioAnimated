@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import "./Section.scss"
 import emailjs from '@emailjs/browser';
+import logo from '../Images/logo512.svg';
+
 
 function Footer() {
   const form = useRef();
@@ -23,14 +25,33 @@ function Footer() {
     >
       <div className="container">
         <div className="row">
-          <div className="footer-left col-sm-6">
+          <div className="footer-left col-sm-6 d-grid align-items-center mb-4 mb-md-0">
             <div className="footer-email-intro">
+              <div className='mb-4'>
+                <img src={logo} alt="Logo" />
+              </div>
               <p className="mt-0">Address : </p>
               <h6>
                 Sangli, India,
                 Pin-416419
               </h6>
-              <h3>pawar0101vinayak@gmail.com</h3>
+              <h3 className='mb-4'>pawar0101vinayak@gmail.com</h3>
+              <div>
+                <ul className="social-media mb-0 ps-0">
+                  <li>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <a href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">LinkedIn</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    <a href="\" target="_blank">Github</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:pawar0101vinayak@gmail.com">Email</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             {/* <div className="footer-nav-menu">
               <ul className="footer-menu ps-0">
@@ -40,22 +61,6 @@ function Footer() {
                 <li className="ps-0"><a href="/">Contacts</a></li>
               </ul>
             </div> */}
-            <div>
-              <ul className="social-media mb-0">
-                <li>
-                  <i className="fa-brands fa-linkedin-in"></i>
-                  <a href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">LinkedIn</a>
-                </li>
-                <li>
-                  <i className="fa-brands fa-github"></i>
-                  <a href="\" target="_blank">Github</a>
-                </li>
-                <li>
-                  <i className="fa-regular fa-envelope"></i>
-                  <a href="mailto:pawar0101vinayak@gmail.com">Email</a>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="col-sm-6">
             <h2 className="mb-4 amazingTitle">Let's make something amazing together</h2>
@@ -92,41 +97,20 @@ function Footer() {
           <div className="d-flex align-items-center justify-content-between py-4 flex-wrap">
             <div className="footer-title text-white d-flex align-items-center">
               Designed Or Built By :
-              <a className="ms-1 d-flex align-items-center"  href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">
+              <a className="ms-1 d-flex align-items-center" href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">
                 <h3 className="title-first-name mb-0">Vinayak</h3>
                 <h3 className="title-last-name mb-0">Pawar</h3>
               </a>
             </div>
             <div className="social-icons">
-              <a
-                href="\"
-                target="_blank"
-              >
-                <i className="fa-brands fa-linkedin-in"></i>
+              <a href="\" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
               </a>
               <a href="\" target="_blank">
-                <i className="fa-brands fa-github"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
               <a href="\" target="_blank">
-                <i className="fa-regular fa-envelope"></i>
-              </a>
-              <a
-                href="\"
-                target="_blank"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-              <a
-                href="\"
-                target="_blank"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="\"
-                target="_blank"
-              >
-                <i className="fa-brands fa-facebook"></i>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
               </a>
             </div>
           </div>

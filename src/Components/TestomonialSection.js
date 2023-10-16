@@ -12,23 +12,26 @@ function TestomonialSection() {
         </div>
         <div className="testimonial-card">
           <div className="star-rating">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <p>5.0 Rating</p>
+            <i class="fa fa-star-o" aria-hidden="true" style={{ color: "#fff705" }}></i>
+            <i class="fa fa-star-o" aria-hidden="true" style={{ color: "#fff705" }}></i>
+            <i class="fa fa-star-o" aria-hidden="true" style={{ color: "#fff705" }}></i>
+            <i class="fa fa-star-o" aria-hidden="true" style={{ color: "#fff705" }}></i>
+            <i class="fa fa-star-o" aria-hidden="true" style={{ color: "grey" }}></i>
+
+            <p>4.0 Rating</p>
           </div>
           <h4>
             Vinayak was a real pleasure to work with and we look forward to
             working with him again. He's definitely the kind designer you can
             trust with a project from start to finish
           </h4>
-          <i className="fa-solid fa-quote-right"></i>
+          {/* <i className="fa-solid fa-quote-right aria-hidden="true"></i> */}
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+
         </div>
         <div className="testimonial-card" style={{ display: "none" }}>
           <div className="star-rating">
-            <i className="fa-solid fa-star"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
@@ -64,7 +67,7 @@ function TestomonialSection() {
               <div className='ImageProfile'><img src={ProfileImage} alt="" /></div>
               <div>
                 <h4>Vinayak Pawar</h4>
-                <p>VP & Co-Founder, <a href="/">Wiser</a></p>
+                <p>Founder</p>
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@ function Content() {
         <section className="content-body">
             <div className="container h-100 overflow-hidden">
                 <div className="row h-100">
-                    <div className="col-sm-6 mobileHeight">
+                    <div className="col-sm-6 mobileHeight d-flex align-items-center">
                         <div>
                             <div className="developer-intro">
                                 <p>UI Developer</p>

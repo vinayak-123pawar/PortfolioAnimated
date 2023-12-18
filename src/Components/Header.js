@@ -33,7 +33,7 @@ function Header() {
             </button>
           </div> */}
           <div>
-            <button onClick={openModal}>Personal Info</button>
+            <button  className="glow-on-hover" onClick={openModal}>Personal Info</button>
             <Modal
               className="ModelInfo"
               isOpen={modalIsOpen}
@@ -42,12 +42,14 @@ function Header() {
               preventScroll={false}
             >
               <Container>
-                <div className='d-flex align-items-center justify-content-between'>
+                <div className='d-flex align-items-center justify-content-between py-3'>
                   <h2>Hello</h2>
-                  <button onClick={closeModal}>close</button>
+                  <button  className="glow-on-hover" onClick={closeModal}>close</button>
                 </div>
                 <Row>
-                  <Col sm={6}></Col>
+                  <Col sm={6}>
+                    
+                  </Col>
                   <Col sm={6}></Col>
                 </Row>
               </Container>

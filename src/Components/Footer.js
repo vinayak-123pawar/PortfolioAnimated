@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import "./Section.scss"
 import emailjs from '@emailjs/browser';
 import logo from '../Images/logo512.svg';
@@ -13,10 +13,25 @@ function Footer() {
     emailjs.sendForm('service_9vymx01', 'template_spruvoa', form.current, 'cRXj8kKzFzELrE6GA')
       .then((result) => {
         console.log(result.text);
+        alert("Message Sent Successfully");
       }, (error) => {
         console.log(error.text);
       });
     e.target.reset()
+  };
+
+  const [mobileNumber, setMobileNumber] = useState('');
+
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+
+    // Check if the input is a number and within the allowed length range
+    if (inputValue.length <= 10) {
+      setMobileNumber(inputValue);
+    }
+    if (mobileNumber !== 10) {
+      return false;
+    }
   };
 
   return (
@@ -39,15 +54,15 @@ function Footer() {
               <div>
                 <ul className="social-media mb-0 ps-0">
                   <li>
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                     <a href="https://www.linkedin.com/in/vinayak-pawar-673b9720b" target="_blank" rel="noreferrer">LinkedIn</a>
                   </li>
                   <li>
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                    <a href="\" target="_blank">Github</a>
+                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <a href="https://github.com/vinayak-123pawar/PortfolioAnimated" target="_blank" rel="noreferrer">Github</a>
                   </li>
                   <li>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
                     <a href="mailto:pawar0101vinayak@gmail.com">Email</a>
                   </li>
                 </ul>
@@ -86,6 +101,11 @@ function Footer() {
                 type="number"
                 name="user_phone"
                 placeholder="Your Phone number"
+                id="mobileNumber"
+                value={mobileNumber}
+                onChange={handleInputChange}
+                minLength={10}
+                maxLength={10}
                 required
               />
               <textarea className='TextAreaWrapper w-100 mb-4' name="message" cols={30} rows={3} placeholder='message' required></textarea>

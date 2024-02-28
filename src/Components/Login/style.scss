@@ -1,0 +1,380 @@
+$background: #1b1a34;
+$card-background: #fff;
+$blob-color: #505dd1;
+$grey-color: #757579;
+
+.LoginWrapper {
+  height: 100vh;
+  color: white;
+  background: $background;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: $blob-color;
+    width: 800px;
+    height: 100%;
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    transform: translate(-50%, -50%);
+    animation: border-transform 15s linear infinite;
+  }
+}
+
+.cardWrapper {
+  padding: 20px 25px;
+  // border: 4px solid #111;
+  border-radius: 8px;
+  min-width: 350px;
+  z-index: 1;
+  background-color: $background;
+}
+
+.LoginTitle {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.usernameInput {
+  // border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  height: 45px;
+  border: 1px solid #000;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: rgb(99, 97, 97);
+  }
+}
+
+.passwordInput {
+  @extend .usernameInput;
+  padding: 5px 15% 5px 10px;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+  font-weight: 600;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.Password {
+  position: absolute;
+  // top: 10%;
+  right: 5%;
+}
+
+.ShowPass {
+  filter: grayscale(1);
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #6961ff;
+  border-color: #6961ff;
+}
+
+.MainScreen {
+  color: white;
+  background: $background;
+  overflow: hidden;
+  height: 100dvh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: $blob-color;
+    width: 800px;
+    height: 100%;
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    transform: translate(-50%, -50%);
+    animation: border-transform 15s linear infinite;
+  }
+
+  .glow-on-hover {
+    width: auto;
+    padding: 5px 15px;
+  }
+}
+
+.z-index {
+  z-index: 1;
+}
+
+.menuList .menu {
+  padding: 5px;
+  margin: 0 15px;
+}
+
+.menuList .menu:before,
+.menuList .menu:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.menuList .menu:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+.menuList .menu:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+.menuList .menu:hover:before,
+.menuList .menu:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.threeLine {
+  height: 100%;
+  width: 100%;
+}
+
+.bar {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 0 0 5px;
+  border-radius: 5px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .cardWrapper {
+    min-width: 100%;
+    // background-color: transparent;
+  }
+
+  .usernameInput {
+    border: none;
+    border-radius: 8px;
+  }
+
+  .LoginTitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .LoginWrapper::before {
+    width: 100%;
+    height: 70%;
+  }
+
+  .MainScreen::before {
+    width: 93%;
+    height: 83%;
+  }
+
+  .glow-on-hover {
+    &::before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      // filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+  }
+
+  .LoginWrapper .glow-on-hover {
+    position: fixed;
+    bottom: 0;
+    margin: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+
+    &::before,
+    &::after {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .MainScreen .glow-on-hover {
+    width: auto;
+    padding: 10px;
+  }
+
+  .menuList {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    right: 0;
+    height: 100%;
+    transition: 2s ease-in-out;
+    animation: showMenu 2s;
+    background-color: $background;
+    border-left: 4px solid white;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes showMenu {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}

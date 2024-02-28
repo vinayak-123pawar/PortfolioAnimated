@@ -7,6 +7,13 @@
   font-family: "Source Code Pro", monospace;
 }
 
+<<<<<<< HEAD
+=======
+.z-index{
+  z-index: 1;
+}
+
+>>>>>>> 7979871b8a03938d30e210342603e46e594d2609
 html {
   scroll-behavior: smooth;
 }
@@ -1057,3 +1064,183 @@ body::selection {
     backdrop-filter: unset;
   }
 }
+<<<<<<< HEAD
+=======
+
+.ModelInfo .NewHomepage_parent_circle__1mN8s {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.7s linear;
+  transition: -webkit-transform 0.7s linear;
+  -moz-transition: transform 0.7s linear, -moz-transform 0.7s linear;
+  transition: transform 0.7s linear;
+  transition: transform 0.7s linear, -webkit-transform 0.7s linear,
+    -moz-transform 0.7s linear;
+  -webkit-animation: NewHomepage_rotate__3btD2 20s linear infinite;
+  animation: NewHomepage_rotate__3btD2 20s linear infinite;
+}
+
+.ModelInfo .NewHomepage_parent_circle__1mN8s .NewHomepage_circle__3Uay3 {
+  display: block;
+  position: absolute;
+  -webkit-filter: blur(172px);
+  filter: blur(172px);
+  margin: -8%;
+  border-radius: 50%;
+}
+
+.ModelInfo
+  .NewHomepage_parent_circle__1mN8s
+  .NewHomepage_circle__3Uay3.NewHomepage_blue__11CT3 {
+  background: #001d69 url(../assets/FirstBlue.svg) no-repeat;
+  -webkit-animation: NewHomepage_zoomout__CspBz 10s ease-in infinite;
+  animation: NewHomepage_zoomout__CspBz 10s ease-in infinite;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 368px;
+  height: 388.96px;
+  left: 14.86%;
+  right: 59.58%;
+  top: 59.58%;
+  bottom: 3.82%;
+}
+
+.ModelInfo
+  .NewHomepage_parent_circle__1mN8s
+  .NewHomepage_circle__3Uay3.NewHomepage_pink__21hfr {
+  background: #001d69 url(../assets/SecondBlue.svg) no-repeat;
+  width: 318px;
+  height: 336.12px;
+  left: 50.15%;
+  right: 35.76%;
+  top: 12.42%;
+  bottom: 37.03%;
+  -webkit-animation: NewHomepage_zoomout__CspBz 7s ease-in infinite;
+  animation: NewHomepage_zoomout__CspBz 7s ease-in infinite;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.ModelInfo
+  .NewHomepage_parent_circle__1mN8s
+  .NewHomepage_circle__3Uay3.NewHomepage_lime__2fIOE {
+  background: #001d69 url(../assets/ThirdBlue.svg) no-repeat;
+  width: 368px;
+  height: 388.96px;
+  left: 67.88%;
+  right: 12.57%;
+  top: 51.7%;
+  bottom: 7.7%;
+  -webkit-animation: NewHomepage_zoomout__CspBz 8s ease-in infinite;
+  animation: NewHomepage_zoomout__CspBz 8s ease-in infinite;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  .ModelInfo
+    .NewHomepage_parent_circle__1mN8s
+    .NewHomepage_circle__3Uay3.NewHomepage_blue__11CT3 {
+    width: 152px;
+    height: 162.12px;
+    -webkit-filter: blur(47px);
+    filter: blur(47px);
+    left: 33.12%;
+    right: 24.38%;
+    top: 61.34%;
+    bottom: 19.67%;
+  }
+
+  .ModelInfo
+    .NewHomepage_parent_circle__1mN8s
+    .NewHomepage_circle__3Uay3.NewHomepage_pink__21hfr {
+    width: 130px;
+    height: 138.65px;
+    -webkit-filter: blur(47px);
+    filter: blur(47px);
+    left: 60%;
+    right: 7.5%;
+    top: 20.88%;
+    bottom: 56.13%;
+  }
+
+  .ModelInfo
+    .NewHomepage_parent_circle__1mN8s
+    .NewHomepage_circle__3Uay3.NewHomepage_lime__2fIOE {
+    width: 152px;
+    height: 162.12px;
+    -webkit-filter: blur(47px);
+    filter: blur(47px);
+    left: 14.81%;
+    right: 51.56%;
+    top: 41.75%;
+    bottom: 38.58%;
+  }
+}
+
+@keyframes NewHomepage_rotate__3btD2 {
+  0% {
+    -webkit-transform: rotate(1turn);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes NewHomepage_rotate__3btD2 {
+  0% {
+    -webkit-transform: rotate(1turn);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes NewHomepage_zoomout__CspBz {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.67);
+    -moz-transform: scale(0.67);
+    transform: scale(0.67);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes NewHomepage_zoomout__CspBz {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.67);
+    transform: scale(0.67);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+>>>>>>> 7979871b8a03938d30e210342603e46e594d2609

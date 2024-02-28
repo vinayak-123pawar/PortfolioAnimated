@@ -54,12 +54,25 @@
 import React, { useState, useEffect } from 'react';
 import "./App.scss";
 import MainScreen from "./Components/Login/MainScreen";
-import logo from './Images/logo512.svg';
+// import logo from './Images/logo512.svg';
 
 const Logo = () => {
   return (
-    <div className="logo">
-      <img src={logo} alt="Logo" />
+    <div className="logo d-flex justify-content-center align-items-center h-100">
+      {/* <img src={logo} alt="Logo" /> */}
+      <div class="loader">
+        <div class="loader__trampoline"></div>
+        <div class="loader__jumper">
+          <div class="loader__jumper-face">
+            <div class="loader__jumper-eyes"></div>
+            <div class="loader__jumper-mouth"></div>
+          </div>
+        </div>
+        <div className="navbar-title justify-content-center mt-4">
+          <h3 className="title-last-name mb-0 me-2">Vinayak</h3>
+          <h3 className="title-last-name mb-0">Pawar</h3>
+        </div>
+      </div>
     </div>
   );
 };
@@ -76,10 +89,10 @@ function App() {
   const [showLogo, setShowLogo] = useState(true);
 
   useEffect(() => {
-    // Hide the logo after 10 seconds
+    // Hide the logo after 5 seconds
     const timeout = setTimeout(() => {
       setShowLogo(false);
-    }, 4000); // 4 seconds in milliseconds
+    }, 5000); // 5 seconds in milliseconds
 
     return () => clearTimeout(timeout);
   }, []);
